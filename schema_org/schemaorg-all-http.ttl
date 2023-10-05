@@ -1,0 +1,23 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:GenerativeAIModel a rdfs:Class ;
+    rdfs:label "GenerativeAIModel" ;
+    rdfs:comment "A generative artificial intelligence model" ;
+    rdfs:subClassOf schema:SoftwareApplication .
+
+schema:windowSize a rdf:Property ;
+    rdfs:label "windowSize" ;
+    rdfs:comment "Size of the window context of the model, for example 3000 tokens representing a context window of 3000 tokens." ;
+    schema:domainIncludes schema:GenerativeAIModel ;
+    schema:rangeIncludes schema:Text .
+
+
+schema:modelSize a rdf:Property ;
+    rdfs:label "modelSize" ;
+    rdfs:comment "Number of parameters of the model, for example 25B representing 25B parameters" ;
+    schema:domainIncludes schema:GenerativeAIModel ;
+    schema:rangeIncludes schema:Text .

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="https://schema.org/" xmlns:schema="https://schema.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="https://schema.org/">
+    <owl:Class rdf:about="https://schema.org/GenerativeAIModel"/>
+    <rdfs:subClassOf rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:comment xml:lang="en">A generative artificial intelligence model.</rdfs:comment>
+    <rdfs:label xml:lang="en">GenerativeAIModel</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://schema.org/GenerativeAIModel"/>
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/windowSize">
+        <rdfs:comment xml:lang="en">Size of the window context of the model, for example 3000 tokens representing a context window of 3000 tokens.</rdfs:comment>
+        <rdfs:label xml:lang="en">windowSize</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/windowSize"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="https://schema.org/GenerativeAIModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="https://schema.org/Text"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="https://schema.org/modelSize">
+        <rdfs:comment xml:lang="en">Number of parameters of the model, for example 25B representing 25B parameters.</rdfs:comment>
+        <rdfs:label xml:lang="en">modelSize</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/modelSize"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="https://schema.org/GenerativeAIModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="https://schema.org/Text"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>    
+</rdf:RDF>

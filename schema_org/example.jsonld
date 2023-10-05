@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "gpt4_openAI_model_1.1",
+  "name": "GPT-4",
+  "description": "GPT-4 is a large multimodal model (accepting text inputs and emitting text outputs today, with image inputs coming in the future) that can solve difficult problems with greater accuracy than any of our previous models, thanks to its broader general knowledge and advanced reasoning capabilities",
+  "softwareVersion": "gpt-4-0613",
+  "mainEntityOfPage": "https://platform.openai.com/docs/models/gpt-4",
+  "author": "https://openai.com/",
+  "url": "https://chat.openai.com/",
+  "modelSize": "not disclosed",
+  "windowSize": "8192 tokens",
+  "datePublished": "2023-06-13"
+}
+
+
