@@ -1,0 +1,13 @@
+{
+    "id": "urn:ngsi-ld:GenerativeAIModel:ThreePhaseAcMeasurement:gpt4_openAI_model:1_1",
+    "type": "GenerativeAIModel",
+    "name": "GPT-4",
+    "description": "GPT-4 is a large multimodal model (accepting text inputs and emitting text outputs today, with image inputs coming in the future) that can solve difficult problems with greater accuracy than any of our previous models, thanks to its broader general knowledge and advanced reasoning capabilities",
+    "softwareVersion": "gpt-4-0613",
+    "documentation": "https://platform.openai.com/docs/models/gpt-4",
+    "owner": ["https://openai.com/"],
+    "contactPoint": "https://chat.openai.com/",
+    "modelSize": "not disclosed",
+    "windowSize": 8192,
+    "datePublished": "2023-06-13T00:00:00.000Z"
+}

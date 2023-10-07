@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModel.MachineLearning/GenerativeAIModel/schema.json",
+    "title": "Smart Data Models - MachineLearning / Generative AI Model",
+    "description": "An Artificial Ingelligence generative model",
+    "modelTags": "",
+    "derivedFrom": "",
+    "license": "https://smart-data-models.github.io/dataModel.MachineLearning/GenerativeAIModel/LICENSE.md",
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+      },
+      {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "GenerativeAIModel"
+            ],
+            "description": "Property. It must be equal to `GenerativeAIModel`."
+          },
+          "softwareVersion": {
+            "type": "string",
+            "description": "Property. Model:'https://schema.org/Text'. The software version of this device"
+          },
+          "modelSize": {
+            "type": "string",
+            "description": "Property. Model:'https://schema.org/Text'.Amount of parameters of the model"
+          },
+          "windowSize": {
+            "type": "string",
+            "description": "Property. Model:'https://schema.org/Number'. Size of the window context of the model"
+          },
+          "documentation": {
+            "type": "string",
+            "format": "uri",
+            "description": "Property. Model:'https://schema.org/URL'. A link to model's documentation"
+          },
+          "datePublished": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Property. Model:'http://schema.org/DateTime'. Date when the model was published"
+          }
+        } 
+      }
+    ],
+    "required": [
+      "id",
+      "type"
+    ]
+  }
