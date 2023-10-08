@@ -3,7 +3,7 @@
     "$schemaVersion": "0.0.1",
     "$id": "https://smart-data-models.github.io/dataModel.MachineLearning/GenerativeAIModel/schema.json",
     "title": "Smart Data Models - MachineLearning / Generative AI Model",
-    "description": "An Artificial Ingelligence generative model",
+    "description": "An Artificial Ingelligence generative model.",
     "modelTags": "",
     "derivedFrom": "",
     "license": "https://smart-data-models.github.io/dataModel.MachineLearning/GenerativeAIModel/LICENSE.md",

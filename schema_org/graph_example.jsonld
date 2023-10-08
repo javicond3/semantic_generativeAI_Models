@@ -1,0 +1,59 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "GenerativeAIModel",
+        "@id": "http://example.org/gpt4_openAI_model_1.1",
+        "name": "GPT-4",
+        "description": "GPT-4 is a large multimodal model (accepting text inputs and emitting text outputs today, with image inputs coming in the future) that can solve difficult problems with greater accuracy than any of our previous models, thanks to its broader general knowledge and advanced reasoning capabilities",
+        "softwareVersion": "gpt-4-0613",
+        "mainEntityOfPage": "https://platform.openai.com/docs/models/gpt-4",
+        "author": "https://openai.com/",
+        "url": "https://chat.openai.com/",
+        "modelSize": "not disclosed",
+        "windowSize": "8192 tokens",
+        "datePublished": "2023-06-13"
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "http://example.org/abstract",
+        "name": "abstract"
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "http://example.org/methods",
+        "name": "methods"
+      },
+      {
+        "@type": "Action",
+        "@id": "http://example.org/summarize1",
+        "name": "summarize",
+        "result": {"@id": "http://example.org/abstract"},
+        "instrument": {"@id": "http://example.org/gpt4_openAI_model_1.1"}
+      },
+      {
+        "@type": "Action",
+        "@id": "http://example.org/translate1",
+        "name": "translate",
+        "result": {"@id": "http://example.org/abstract"},
+        "instrument": {"@id": "http://example.org/gpt4_openAI_model_1.1"}
+      },
+      {
+        "@type": "Action",
+        "@id": "http://example.org/translate2",
+        "name": "translate",
+        "result": {"@id": "http://example.org/methods"},
+        "instrument": {"@id": "http://example.org/gpt4_openAI_model_1.1"}
+      },
+      {
+        "@type": "Article",
+        "@id": "http://example.org/article",
+        "name": "Your Article Name Here",
+        "hasPart": [
+          {"@id": "http://example.org/abstract"},
+          {"@id": "http://example.org/methods"}
+        ]
+      }
+    ]
+  }
+  
