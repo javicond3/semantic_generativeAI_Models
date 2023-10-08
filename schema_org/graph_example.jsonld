@@ -48,7 +48,7 @@
       {
         "@type": "Article",
         "@id": "http://example.org/article",
-        "name": "Your Article Name Here",
+        "name": "article",
         "hasPart": [
           {"@id": "http://example.org/abstract"},
           {"@id": "http://example.org/methods"}
